@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 public class EscreverNovoArquivo {
     public static  <T> void escreverArquivo(ArrayList<T> listaDeEscrita) throws IOException {
-        BufferedWriter escritor = new BufferedWriter(new FileWriter("data\\relatório.csv"));
+        BufferedWriter escritor = new BufferedWriter(new FileWriter("data\\relatório2.csv"));
         escritor.write(cabecalhoArquivo());
         for (T t : listaDeEscrita) {
             escritor.write(regraDeEscrita((Servidor) t));
